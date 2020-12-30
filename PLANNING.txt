@@ -1,0 +1,12 @@
+PLANNING
+
+time_stamps object:
+
+key will be either a:
+    string (the "description") -> a stamp not in any reported function.
+    tuple (*fnames, "description" | (0, -1))
+        -> *fnames is one or more filenames in nested order
+        -> the last value is either the description, or 0 or -1. When it is 0 or -1 then it is the start or end of a function respectively.
+
+TODO: add numpy support to optimise storage of the timestamp data?
+TODO: make each function frame be its own object. This can then have special methods defined on it to extract all the info more easily
