@@ -9,4 +9,16 @@ key will be either a:
         -> the last value is either the description, or 0 or -1. When it is 0 or -1 then it is the start or end of a function respectively.
 
 TODO: add numpy support to optimise storage of the timestamp data?
+
+```
+import numpy as np
+
+arr = np.array([], dtype=float)
+# whenever adding antything:
+arr = np.append(arr, $val)
+
+mean = arr.mean()
+```
+
+
 TODO: make each function frame be its own object. This can then have special methods defined on it to extract all the info more easily
